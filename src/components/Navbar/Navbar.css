@@ -1,0 +1,144 @@
+.nav {
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+/* Logo  */
+.con1 {
+  margin-right: 10px;
+}
+.logo {
+  padding: 10px 20px;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1.3px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+/* Search Bar */
+.con2 {
+  min-width: 100px;
+  max-width: 600px;
+  border: 1px solid rgba(211, 211, 211, 0.617);
+  border-radius: 30px;
+  background-color: hsla(0, 0%, 95%, 0.639);
+  padding: 8px 15px;
+  width: 50%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+.con2:focus-within {
+  border-color: hsl(0, 0%, 27%);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0 3px hsla(220, 90%, 55%, 0.15);
+}
+
+.search-container {
+  display: flex;
+  gap: 7px;
+}
+.input {
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+.input:focus {
+  outline: none;
+}
+.search-container svg {
+  width: 20px;
+  fill: #0000005f;
+}
+
+/* Action Buttons */
+.con3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  gap: 5px;
+}
+.btn-orders,
+.btn-cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-cart {
+  position: relative;
+}
+
+.btn-orders svg,
+.btn-cart svg {
+  width: 30px;
+  fill: hsl(0, 0%, 0%);
+  transition: transform 0.2 ease, fill 0.2s ease;
+}
+.btn-orders svg:hover {
+  transform: scale(1.07);
+  fill: hsl(220, 90%, 55%);
+}
+.btn-cart svg:hover {
+  transform: scale(1.07);
+}
+.btn-orders:active svg,
+.btn-cart:active svg {
+  transform: scale(0.95);
+}
+.cart-number {
+  position: absolute;
+  top: -4px;
+  right: -3px;
+  width: 10px;
+  height: 18px;
+  padding: 0 5px;
+
+  background-color: hsl(245, 100%, 55%);
+  color: white;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+
+  border-radius: 999px;
+}
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: hsl(0, 0%, 85%);
+  margin: 5px 0;
+}
+
+/* BRAKE POINTS */
+/* Just smaller paddings */
+@media (max-width: 640px) {
+  .nav {
+    padding: 12px 14px;
+  }
+  .logo {
+    padding: 6px 10px;
+  }
+  .input {
+    font-size: 0.8rem;
+  }
+  .btn-orders svg,
+  .btn-cart svg {
+    width: 22px;
+  }
+}
