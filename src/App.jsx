@@ -1,13 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import ProductCard from './components/ProductCard/ProductCard';
-import ShopPage from './components/ShopPage/ShopPage';
+import ShopPage from './pages/ShopPage/ShopPage';
+import CartPage from './pages/CartPage/CartPage';
 function App() {
   return (
     <>
-      <Navbar />
-      <ShopPage />
-      {/* <ProductCard /> */}
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<ShopPage />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
