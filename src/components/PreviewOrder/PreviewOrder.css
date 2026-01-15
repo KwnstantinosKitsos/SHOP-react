@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 14px;
+  padding: 18px 20px;
+  background: white;
 }
 /* LEFT SIDE */
 .preview-left-info {
