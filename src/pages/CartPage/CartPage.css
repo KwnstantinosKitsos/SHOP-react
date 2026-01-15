@@ -1,0 +1,25 @@
+.cart-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.cart-preview-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.cart-grid-layout {
+  border: 1px solid black;
+  padding: 20px;
+}
+.cart-left {
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 10px;
+}
+.cart-right {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
