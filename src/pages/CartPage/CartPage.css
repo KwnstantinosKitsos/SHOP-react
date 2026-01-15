@@ -1,12 +1,10 @@
 /* Cart EMPTY  */
-
 .cart-empty {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   gap: 12px;
 }
@@ -33,6 +31,7 @@
   border-color: #000;
 }
 
+/* NOT EMPTY */
 .cart-title {
   font-size: 2rem;
   font-weight: 600;
