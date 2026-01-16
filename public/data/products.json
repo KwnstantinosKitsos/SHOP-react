@@ -1,0 +1,164 @@
+{
+  "products": [
+    {
+      "id": "p_gpu_3070ti_asus",
+      "title": "Asus GeForce RTX 3070 Ti",
+      "description": "High-performance graphics card featuring Ampere architecture, 8GB GDDR6X memory, and advanced axial-tech cooling.",
+      "price": 649.99,
+      "rating": 4.8,
+      "ratingCount": 42,
+      "thumbnail": "/assets/productsImages/1-RTX3070Ti.avif",
+      "stock": 5
+    },
+    {
+      "id": "p_gpu_3070ti_palit_gamerock",
+      "title": "Palit RTX 3070 Ti GameRock",
+      "description": "8GB GDDR6X GPU with unique Crystal ARGB design and advanced cooling.",
+      "price": 629.99,
+      "rating": 4.7,
+      "ratingCount": 31,
+      "thumbnail": "/assets/productsImages/2-PalitGameRock3070Ti.avif",
+      "stock": 3
+    },
+    {
+      "id": "p_ram_corsair_vengeance_ddr5_32gb",
+      "title": "Corsair Vengeance 32GB DDR5",
+      "description": "High-speed 32GB (2x16GB) DDR5 kit optimized for next-gen performance.",
+      "price": 124.9,
+      "rating": 4.9,
+      "ratingCount": 56,
+      "thumbnail": "/assets/productsImages/3-CorsairVengeanceDDR5.avif",
+      "stock": 15
+    },
+    {
+      "id": "p_cpu_intel_ultra9_285k",
+      "title": "Intel Core Ultra 9 285K",
+      "description": "Next-gen 24-core processor with AI Boost and up to 5.7GHz clock speed.",
+      "price": 619.0,
+      "rating": 4.9,
+      "ratingCount": 24,
+      "thumbnail": "/assets/productsImages/4-IntelUltra9-285K.avif",
+      "stock": 8
+    },
+    {
+      "id": "p_cpu_amd_9950x3d",
+      "title": "AMD Ryzen 9 9950X3D",
+      "description": "16-core AM5 processor with 128MB L3 V-Cache for ultimate gaming performance.",
+      "price": 749.0,
+      "rating": 5.0,
+      "ratingCount": 12,
+      "thumbnail": "/assets/productsImages/5-Ryzen9-9950X3D.avif",
+      "stock": 4
+    },
+    {
+      "id": "p_kb_nuphy_air60_v2",
+      "title": "NuPhy Air60 V2",
+      "description": "Ultra-slim wireless mechanical keyboard with QMK/VIA support and RGB lighting.",
+      "price": 119.95,
+      "rating": 4.8,
+      "ratingCount": 85,
+      "thumbnail": "/assets/productsImages/6-NuPhyAir60V2.avif",
+      "stock": 10
+    },
+    {
+      "id": "p_kb_lofree_flow_2_84",
+      "title": "Lofree Flow 2 84",
+      "description": "Premium 75% low-profile mechanical keyboard with gasket mount and PBT keycaps.",
+      "price": 169.0,
+      "rating": 4.9,
+      "ratingCount": 38,
+      "thumbnail": "/assets/productsImages/7-LofreeFlow2-84.avif",
+      "stock": 6
+    },
+    {
+      "id": "p_mouse_logitech_superlight_2",
+      "title": "Logitech G Pro X Superlight 2",
+      "description": "60g ultra-lightweight wireless mouse with LIGHTFORCE switches and 32K sensor.",
+      "price": 149.0,
+      "rating": 4.9,
+      "ratingCount": 156,
+      "thumbnail": "/assets/productsImages/8-LogitechSuperlight2.avif",
+      "stock": 12
+    },
+    {
+      "id": "p_mouse_logitech_mx_master_4",
+      "title": "Logitech MX Master 4 Graphite",
+      "description": "Premium productivity mouse with MagSpeed scrolling and 8K DPI tracking.",
+      "price": 129.0,
+      "rating": 4.9,
+      "ratingCount": 210,
+      "thumbnail": "/assets/productsImages/9-MXMaster4.avif",
+      "stock": 20
+    },
+    {
+      "id": "p_mon_aorus_co49dq",
+      "title": "Aorus CO49DQ 49\" OLED",
+      "description": "49-inch DQHD 144Hz curved OLED gaming monitor with 0.03ms response time.",
+      "price": 1099.0,
+      "rating": 4.9,
+      "ratingCount": 28,
+      "thumbnail": "/assets/productsImages/10-AorusCO49DQ.avif",
+      "stock": 2
+    },
+    {
+      "id": "p_mon_samsung_g81sf_oled",
+      "title": "Samsung Odyssey OLED G8 27\"",
+      "description": "27-inch QHD OLED display with 360Hz refresh rate and 0.03ms response time.",
+      "price": 849.0,
+      "rating": 4.9,
+      "ratingCount": 45,
+      "thumbnail": "/assets/productsImages/11-SamsungOLEDG8.avif",
+      "stock": 6
+    },
+    {
+      "id": "p_audio_apple_airpods_max",
+      "title": "Apple AirPods Max",
+      "description": "Premium over-ear headphones with Active Noise Cancellation and Spatial Audio.",
+      "price": 549.0,
+      "rating": 4.7,
+      "ratingCount": 320,
+      "thumbnail": "/assets/productsImages/12-AirPodsMax.avif",
+      "stock": 10
+    },
+    {
+      "id": "p_audio_sony_wh1000xm6",
+      "title": "Sony WH-1000XM6",
+      "description": "Industry-leading noise canceling headphones with dual processors and AI calls.",
+      "price": 399.0,
+      "rating": 5.0,
+      "ratingCount": 18,
+      "thumbnail": "/assets/productsImages/13-SonyXM6.avif",
+      "stock": 14
+    },
+    {
+      "id": "p_wear_garmin_quatix_8_pro",
+      "title": "Garmin quatix 8 Pro",
+      "description": "Premium marine smartwatch with AMOLED display and advanced sailing features.",
+      "price": 1099.0,
+      "rating": 5.0,
+      "ratingCount": 9,
+      "thumbnail": "/assets/productsImages/14-GarminQuatix8Pro.avif",
+      "stock": 3
+    },
+    {
+      "id": "p_wear_apple_watch_ultra_3",
+      "title": "Apple Watch Ultra 3",
+      "description": "The ultimate sports watch with 3000-nit OLED display and dual-frequency GPS.",
+      "price": 899.0,
+      "rating": 4.9,
+      "ratingCount": 62,
+      "thumbnail": "/assets/productsImages/15-AppleWatchUltra3.avif",
+      "stock": 12
+    },
+    {
+      "id": "p_wear_samsung_watch_ultra",
+      "title": "Samsung Galaxy Watch Ultra",
+      "description": "Rugged titanium smartwatch with AI-powered health tracking and 100hr battery life.",
+      "price": 699.0,
+      "rating": 4.8,
+      "ratingCount": 41,
+      "thumbnail": "/assets/productsImages/16-GalaxyWatchUltra.avif",
+      "stock": 9
+    }
+  ]
+}
