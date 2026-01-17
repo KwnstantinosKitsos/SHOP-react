@@ -1,4 +1,3 @@
-import gpuImg from '../../assets/gpu.avif';
 import './PreviewOrder.css';
 
 export default function PreviewOrder() {
@@ -9,7 +8,7 @@ export default function PreviewOrder() {
       <div className="preview-left-info">
         <p className="preview-delivery-time"> Delivery time: Feb 12 2026 </p>
         <div className="preview-img">
-          <img src={gpuImg} />
+          <img src="/assets/productsImages/1-RTX3070Ti.avif" />
         </div>
       </div>
       {/* Right Side - Details */}

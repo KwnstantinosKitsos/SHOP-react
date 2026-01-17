@@ -1,5 +1,5 @@
 import './OrderItems.css';
-import gpuImg from '../../assets/gpu.avif';
+
 export default function OrderItems() {
   return (
     <div className="order-itmems-container">
@@ -9,7 +9,10 @@ export default function OrderItems() {
         <div className="order-item">
           {/* Product Image */}
           <div className="order-item-img-container">
-            <img className="order-item-img" src={gpuImg}></img>
+            <img
+              className="order-item-img"
+              src="/assets/productsImages/1-RTX3070Ti.avif"
+            ></img>
           </div>
 
           <div className="order-item-info">
