@@ -5,3 +5,18 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
 }
+
+.error-container {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

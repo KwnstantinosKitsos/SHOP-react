@@ -9,7 +9,7 @@ export default function ShopPage() {
   const [error, setError] = useState(null);
   const { searchItems } = useSearch();
 
-  // only by title
+  // Search only by title
   const filteredProducts = products.filter((product) => {
     return product.title.toLowerCase().includes(searchItems.toLowerCase());
   });
