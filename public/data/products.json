@@ -3,7 +3,7 @@
     {
       "id": "p_gpu_3070ti_asus",
       "title": "Asus GeForce RTX 3070 Ti",
-      "description": "High-performance graphics card featuring Ampere architecture, 8GB GDDR6X memory, and advanced axial-tech cooling.",
+      "description": "High-performance GPU with 8GB GDDR6X and advanced cooling.",
       "priceCents": 64999,
       "rating": 4.8,
       "ratingCount": 42,

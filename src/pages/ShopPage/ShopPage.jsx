@@ -1,10 +1,18 @@
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './ShopPage.css';
 import { useEffect, useState } from 'react';
+import { useSearch } from '../../context/SearchContext';
+
 export default function ShopPage() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { searchItems } = useSearch();
+
+  // only by title
+  const filteredProducts = products.filter((product) => {
+    return product.title.toLowerCase().includes(searchItems.toLowerCase());
+  });
 
   useEffect(() => {
     async function fetchProduct() {
@@ -38,11 +46,10 @@ export default function ShopPage() {
     return <div className="loading-container">Φόρτωση προϊόντων...</div>;
   }
 
-  // Main return
   return (
     <>
       <div className="product-grid">
-        {products.map((product) => {
+        {filteredProducts.map((product) => {
           return <ProductCard key={product.id} product={product} />;
         })}
 
