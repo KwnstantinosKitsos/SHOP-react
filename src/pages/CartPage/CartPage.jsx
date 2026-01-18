@@ -2,10 +2,12 @@ import PaymentSummary from '../../components/PaymentSummary/PaymentSummary';
 import PreviewOrder from '../../components/PreviewOrder/PreviewOrder';
 import './CartPage.css';
 import { Link } from 'react-router-dom';
-export default function CartPage() {
-  const itemList = [1, 2, 3, 4, 5, 6];
+import { useCart } from '../../context/CartContext';
 
-  if (itemList.length === 0) {
+export default function CartPage() {
+  const { cart } = useCart();
+
+  if (cart.length === 0) {
     return (
       <>
         <div className="cart-empty">
@@ -19,18 +21,21 @@ export default function CartPage() {
   return (
     <div className="cart-page">
       <h1 className="cart-title">
-        Checkout <span className="art-title-quantity">(1)</span>
+        Checkout <span className="art-title-quantity">({cart.length})</span>
       </h1>
       <h2 className="cart-preview-text">Review your order</h2>
       <div className="cart-grid-layout">
         <main className="cart-left">
           <div className="cart-items">
+            {cart.map((item) => {
+              return <PreviewOrder key={cart.id} product={item} />;
+            })}
+
+            {/* <PreviewOrder />
             <PreviewOrder />
             <PreviewOrder />
             <PreviewOrder />
-            <PreviewOrder />
-            <PreviewOrder />
-            <PreviewOrder />
+            <PreviewOrder /> */}
           </div>
         </main>
         <aside className="cart-right">

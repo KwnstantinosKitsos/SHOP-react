@@ -1,5 +1,6 @@
 import './ProductCard.css';
 import StarRating from '../StarRating/StarRating';
+import { useCart } from '../../context/CartContext';
 export default function ProductCard({ product }) {
   const stars = [1, 2, 3, 4, 5];
   // const mockProduct = {
@@ -9,6 +10,7 @@ export default function ProductCard({ product }) {
   //   ratingCount: 18,
   //   price: 799.99,
   // };
+  const { addToCard } = useCart();
   return (
     <>
       <div className="product-container">
@@ -32,7 +34,9 @@ export default function ProductCard({ product }) {
         <div className="product-price">
           ${(product.priceCents / 100).toFixed(2)}
         </div>
-        <button className="product-btn">Add to Cart</button>
+        <button className="product-btn" onClick={() => addToCard(product)}>
+          Add to Cart
+        </button>
       </div>
     </>
   );
