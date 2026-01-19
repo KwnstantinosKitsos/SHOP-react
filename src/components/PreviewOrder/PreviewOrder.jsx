@@ -14,7 +14,7 @@ export default function PreviewOrder({ product }) {
       {/* Right Side - Details */}
       <div className="preview-right">
         <div className="preview-details">
-          <h3 className="preview-details-title">{product.thumbnail}</h3>
+          <h3 className="preview-details-title">{product.title}</h3>
           <p className="preview-details-description">{product.description}</p>
         </div>
         <div className="preview-info">
@@ -25,31 +25,6 @@ export default function PreviewOrder({ product }) {
             {/* TO DO: dynamic quantity */}
             Quantity: 1
           </span>
-        </div>
-        {/* Shipping Options */}
-        <div className="preview-shipping">
-          <p className="preview-shipping-text">Shipping:</p>
-
-          <div className="preview-shipping-radio">
-            <label className="preview-shipping-free">
-              <input
-                type="radio"
-                className="preview-shipping-free-input radio"
-              />
-              <span className="preview-shipping-free-text">
-                Free Shipping (5-7 days)
-              </span>
-            </label>
-            <label className="preview-shipping-paid">
-              <input
-                type="radio"
-                className="preview-shipping-paid-input radio"
-              />
-              <span className="preview-shipping-paid-text">
-                Fast Shipping - $9.99 (2-3 days)
-              </span>
-            </label>
-          </div>
         </div>
       </div>
     </div>

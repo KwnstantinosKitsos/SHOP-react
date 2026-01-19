@@ -1,5 +1,6 @@
 import PaymentSummary from '../../components/PaymentSummary/PaymentSummary';
 import PreviewOrder from '../../components/PreviewOrder/PreviewOrder';
+import ShippingOptions from '../../components/ShippingOptions/ShippingOptions';
 import './CartPage.css';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
@@ -37,6 +38,7 @@ export default function CartPage() {
             <PreviewOrder />
             <PreviewOrder /> */}
           </div>
+          <ShippingOptions />
         </main>
         <aside className="cart-right">
           <PaymentSummary />

@@ -1,0 +1,58 @@
+.shipping-options-container {
+  background-color: white;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.preview-shipping-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f2f2;
+  padding-bottom: 10px;
+}
+
+.preview-shipping-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.preview-shipping-radio label {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.preview-shipping-radio label:hover {
+  background-color: #f7fafa;
+  border-color: #adb1b1;
+}
+
+.preview-shipping-radio label:has(input:checked) {
+  background-color: #f0f8ff;
+  border-color: #007185;
+  box-shadow: 0 0 5px rgba(0, 113, 133, 0.1);
+}
+
+.radio {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #007185;
+  margin-right: 12px;
+}
+
+.preview-shipping-free-text,
+.preview-shipping-paid-text {
+  font-size: 14px;
+  color: #0f1111;
+  font-weight: 500;
+}

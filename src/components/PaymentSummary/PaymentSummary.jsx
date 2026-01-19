@@ -1,5 +1,21 @@
 import './PaymentSummary.css';
+import { useCart } from '../../context/CartContext';
 export default function PaymentSummary() {
+  const { cart, shippingCost } = useCart();
+
+  // Total
+  const itemsTotalCents = cart.reduce(
+    (previousTotal, nextItem) => previousTotal + nextItem.priceCents,
+    0,
+  );
+  const itemsTotal = itemsTotalCents / 100;
+
+  // Shipping
+  const totalBeforeTax = itemsTotal + shippingCost;
+
+  const estimatedTax = totalBeforeTax * 0.1;
+
+  const orderTotal = totalBeforeTax + estimatedTax;
   return (
     <>
       <div className="payment-container">
@@ -9,10 +25,11 @@ export default function PaymentSummary() {
           {/* Items */}
           <div className="payment-info-items space">
             <div className="payment-item-text">
-              Items<span className="payment-item-quantity"> (1)</span>:
+              Items
+              <span className="payment-item-quantity"> ({cart.length})</span>:
             </div>
             <div className="payment-item-price">
-              <span className="">$799.99</span>
+              <span className="">${itemsTotal.toFixed(2)}</span>
             </div>
           </div>
           {/* Shipping */}
@@ -20,24 +37,32 @@ export default function PaymentSummary() {
             <div className="payment-info-shipping-text">
               Shipping & handling:
             </div>
-            <div className="payment-info-shipping-price">$0.00</div>
+            <div className="payment-info-shipping-price">
+              ${shippingCost.toFixed(2)}
+            </div>
           </div>
           <hr className=" horizontal" />
           {/* Before TAX */}
           <div className="payment-info-b-tax space">
             <div className="payment-info-b-tax-text">Total before tax:</div>
-            <div className="payment-info-b-tax-price">$799.97</div>
+            <div className="payment-info-b-tax-price">
+              ${totalBeforeTax.toFixed(2)}
+            </div>
           </div>
           {/* After TAX */}
           <div className="payment-info-a-tax space">
             <div className="payment-info-a-tax-text">Estimated tax (10%):</div>
-            <div className="payment-info-a-tax-price">$79.99</div>
+            <div className="payment-info-a-tax-price">
+              ${estimatedTax.toFixed(2)}
+            </div>
           </div>
           <hr className=" horizontal" />
           {/* Total */}
           <div className="payment-info-total space">
             <div className="payment-info-total-text">Order total:</div>
-            <div className="payment-info-total-price">$880.00</div>
+            <div className="payment-info-total-price">
+              ${orderTotal.toFixed(2)}
+            </div>
           </div>
         </div>
         <div className="payment-container-btn">
