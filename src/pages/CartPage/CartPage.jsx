@@ -28,8 +28,14 @@ export default function CartPage() {
       <div className="cart-grid-layout">
         <main className="cart-left">
           <div className="cart-items">
-            {cart.map((item) => {
-              return <PreviewOrder key={cart.id} product={item} />;
+            {cart.map((item, index) => {
+              return (
+                <PreviewOrder
+                  key={`${item.id} - ${index}`}
+                  product={item}
+                  index={index}
+                />
+              );
             })}
 
             {/* <PreviewOrder />

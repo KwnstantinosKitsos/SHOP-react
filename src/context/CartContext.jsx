@@ -5,12 +5,18 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [shippingMethod, setShippingMethod] = useState('');
-  const shippingCost = shippingMethod === 'fast' ? 9.99 : 0;
 
   function addToCard(product) {
     setCart((prev) => [...prev, product]);
   }
+  function deleteFromCard(indexToDelete) {
+    setCart((prev) => prev.filter((_, index) => index !== indexToDelete));
+  }
+  // Shipping
+  // 1. Add cost for delivery
+  const shippingCost = shippingMethod === 'fast' ? 9.99 : 0;
 
+  // 2. Add delivery dates
   function getDateDelivery() {
     const today = new Date();
     const daysToAdd = shippingMethod === 'fast' ? 3 : 7;
@@ -30,6 +36,7 @@ export function CartProvider({ children }) {
           cart,
           setCart,
           addToCard,
+          deleteFromCard,
           shippingMethod,
           setShippingMethod,
           shippingCost,
