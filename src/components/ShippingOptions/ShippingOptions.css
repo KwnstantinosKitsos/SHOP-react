@@ -56,3 +56,11 @@
   color: #0f1111;
   font-weight: 500;
 }
+.preview-delivery-text {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}

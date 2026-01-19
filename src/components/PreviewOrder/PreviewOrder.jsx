@@ -1,12 +1,13 @@
 import './PreviewOrder.css';
+import { useCart } from '../../context/CartContext';
 
 export default function PreviewOrder({ product }) {
+  const { deliveryDate } = useCart();
   return (
     /* Review Your Order */
     <div className="preview-container">
       {/* Left Side - Details */}
       <div className="preview-left-info">
-        <p className="preview-delivery-time"> Delivery time: Feb 12 2026 </p>
         <div className="preview-img">
           <img src={product.thumbnail} alt={product.title} />
         </div>

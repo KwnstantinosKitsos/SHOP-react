@@ -1,7 +1,7 @@
 import './ShippingOptions.css';
 import { useCart } from '../../context/CartContext';
 export default function ShippingOptions() {
-  const { shippingMethod, setShippingMethod } = useCart();
+  const { shippingMethod, setShippingMethod, deliveryDate } = useCart();
   return (
     <>
       {/* Shipping Options */}
@@ -33,6 +33,10 @@ export default function ShippingOptions() {
               Fast Shipping - $9.99 (2-3 days)
             </span>
           </label>
+          <p className="preview-delivery-text">
+            Estimated Delivery:
+            <span className="preview-delivery-time">{deliveryDate}</span>
+          </p>
         </div>
       </div>
     </>

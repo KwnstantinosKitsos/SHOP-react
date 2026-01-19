@@ -10,6 +10,19 @@ export function CartProvider({ children }) {
   function addToCard(product) {
     setCart((prev) => [...prev, product]);
   }
+
+  function getDateDelivery() {
+    const today = new Date();
+    const daysToAdd = shippingMethod === 'fast' ? 3 : 7;
+    today.setDate(today.getDate() + daysToAdd);
+
+    return today.toLocaleString('en-US', {
+      weekday: 'long', // π.χ. Monday
+      month: 'short', // π.χ. Jan
+      day: 'numeric',
+    });
+  }
+  const deliveryDate = getDateDelivery();
   return (
     <>
       <CartContext.Provider
@@ -20,6 +33,7 @@ export function CartProvider({ children }) {
           shippingMethod,
           setShippingMethod,
           shippingCost,
+          deliveryDate,
         }}
       >
         {children}
