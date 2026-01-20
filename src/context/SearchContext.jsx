@@ -1,8 +1,11 @@
 import { createContext, useContext, useState } from 'react';
 
 // 1. Create Context
-const SearchContext = createContext();
+const SearchContext = createContext(null);
 
+if (!SearchContext) {
+  throw new Error('Be careful, useSearch must be used within SearchProvider!');
+}
 // 2. Component Provier
 
 export function SearchProvider({ children }) {
@@ -16,5 +19,5 @@ export function SearchProvider({ children }) {
     </>
   );
 }
-
+// Custom HOOK
 export const useSearch = () => useContext(SearchContext);

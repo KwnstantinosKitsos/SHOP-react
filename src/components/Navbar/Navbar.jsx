@@ -50,7 +50,7 @@ export default function Navbar() {
               {cart.length > 0 && (
                 <span className="cart-number">
                   {cart.length}
-                  {console.log(cart)}
+                  {/* {console.log(cart)} */}
                 </span>
               )}
             </Link>

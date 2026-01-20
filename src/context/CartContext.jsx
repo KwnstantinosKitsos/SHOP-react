@@ -1,13 +1,26 @@
 import { createContext, useContext, useState } from 'react';
 
-const CartContext = createContext();
+// 1. Create Context
+const CartContext = createContext(null);
+if (!CartContext) {
+  throw new Error('Be careful, useSearch must be used within SearchProvider!');
+}
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [shippingMethod, setShippingMethod] = useState('');
+  const [addedMessage, setAddedMessage] = useState(null);
 
+  // Add / Delete
   function addToCard(product) {
     setCart((prev) => [...prev, product]);
+
+    // Added Message
+    setAddedMessage(product.title);
+
+    setTimeout(() => {
+      setAddedMessage(null);
+    }, 2000);
   }
   function deleteFromCard(indexToDelete) {
     setCart((prev) => prev.filter((_, index) => index !== indexToDelete));
@@ -20,6 +33,7 @@ export function CartProvider({ children }) {
   function getDateDelivery() {
     const today = new Date();
     const daysToAdd = shippingMethod === 'fast' ? 3 : 7;
+    // setDate() change the object today
     today.setDate(today.getDate() + daysToAdd);
 
     return today.toLocaleString('en-US', {
@@ -29,6 +43,7 @@ export function CartProvider({ children }) {
     });
   }
   const deliveryDate = getDateDelivery();
+
   return (
     <>
       <CartContext.Provider
@@ -41,6 +56,7 @@ export function CartProvider({ children }) {
           setShippingMethod,
           shippingCost,
           deliveryDate,
+          addedMessage,
         }}
       >
         {children}
@@ -49,4 +65,5 @@ export function CartProvider({ children }) {
   );
 }
 
+// Custom HOOK
 export const useCart = () => useContext(CartContext);

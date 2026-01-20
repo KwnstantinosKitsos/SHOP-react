@@ -3,3 +3,28 @@
   box-sizing: border-box;
   margin: 0;
 }
+.notification-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: hsl(166, 91%, 26%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10; /* Για να είναι πάνω από εικόνες και κουμπιά */
+  animation: slideInRight 0.3s ease-out;
+}
+.added-product-message {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 6px;
+}
+.added-product-message svg {
+  width: 20px;
+  fill: white;
+}
