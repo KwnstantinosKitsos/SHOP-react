@@ -244,45 +244,61 @@
   ],
   "orders": [
     {
-      "id": "7763dc84-50c7-4c37-b922-b9a87b42085a",
+      "id": "d3c1e7b5-82c7-4fd5-a9ae-74b2316cd3c8",
       "day": "Jan 21, 2026",
       "orderItems": [
         {
-          "id": "p_gpu_3070ti_palit_gamerock",
-          "title": "Palit RTX 3070 Ti GameRock",
-          "description": "8GB GDDR6X GPU with unique Crystal ARGB design and advanced cooling.",
-          "priceCents": 62999,
-          "rating": 4.7,
-          "ratingCount": 31,
-          "thumbnail": "/assets/productsImages/2-PalitGameRock3070Ti.avif",
-          "stock": 3,
+          "id": "p_kb_lofree_flow_2_84",
+          "title": "Lofree Flow 2 84",
+          "description": "Premium 75% low-profile mechanical keyboard with gasket mount and PBT keycaps.",
+          "priceCents": 16900,
+          "rating": 4.9,
+          "ratingCount": 38,
+          "thumbnail": "/assets/productsImages/7-LofreeFlow2-84.avif",
+          "stock": 6,
           "keywords": [
-            "rgb",
-            "gpu",
-            "palit"
+            "premium",
+            "keyboard",
+            "lofree",
+            "low-profile"
           ]
         },
         {
-          "id": "p_gpu_3070ti_palit_gamerock",
-          "title": "Palit RTX 3070 Ti GameRock",
-          "description": "8GB GDDR6X GPU with unique Crystal ARGB design and advanced cooling.",
-          "priceCents": 62999,
+          "id": "p_audio_apple_airpods_max",
+          "title": "Apple AirPods Max",
+          "description": "Premium over-ear headphones with Active Noise Cancellation and Spatial Audio.",
+          "priceCents": 54900,
           "rating": 4.7,
-          "ratingCount": 31,
-          "thumbnail": "/assets/productsImages/2-PalitGameRock3070Ti.avif",
-          "stock": 3,
+          "ratingCount": 320,
+          "thumbnail": "/assets/productsImages/12-AirPodsMax.avif",
+          "stock": 10,
           "keywords": [
-            "rgb",
-            "gpu",
-            "palit"
+            "headphones",
+            "apple",
+            "audio"
+          ]
+        },
+        {
+          "id": "p_wear_samsung_watch_ultra",
+          "title": "Samsung Galaxy Watch Ultra",
+          "description": "Rugged titanium smartwatch with AI-powered health tracking and 100hr battery life.",
+          "priceCents": 69900,
+          "rating": 4.8,
+          "ratingCount": 41,
+          "thumbnail": "/assets/productsImages/16-GalaxyWatchUltra.avif",
+          "stock": 9,
+          "keywords": [
+            "ultra",
+            "smartwatch",
+            "samsung"
           ]
         }
       ],
       "priceDetails": {
-        "subTotal": "1259.98",
+        "subTotal": "1417.00",
         "shippingCost": "9.99",
-        "tax": "126.00",
-        "total": "1395.97"
+        "tax": "141.70",
+        "total": "1568.69"
       }
     }
   ]

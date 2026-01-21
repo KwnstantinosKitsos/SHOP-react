@@ -106,6 +106,10 @@ export function CartProvider({ children }) {
           deliveryDate,
           addedMessage,
           placeOrder,
+          orders,
+          setOrders,
+          loading,
+          setLoading,
         }}
       >
         {children}

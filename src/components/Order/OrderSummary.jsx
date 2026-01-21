@@ -1,20 +1,20 @@
 import './OrderSummary.css';
-export default function OrderSummary() {
+export default function OrderSummary({ order }) {
   return (
     <div className="order-summary-container">
       <h2 className="order-id title">Order Summary</h2>
       <div className="order-summary">
         <div className="order-summary-id">
           <span> Order ID</span>
-          <h3 className="h3"> ORD-4L3JKP05I</h3>
+          <h3 className="h3">{order.id}</h3>
         </div>
         <div className="order-summary-placed">
           <span> Order Placed</span>
-          <h3 className="h3">Jun 10, 2026</h3>
+          <h3 className="h3">{order.day}</h3>
         </div>
         <div className="order-summary-total">
           <span>Total</span>
-          <h3 className="h3 total">$274.98</h3>
+          <h3 className="h3 total">${order.priceDetails.total}</h3>
         </div>
       </div>
       <hr />
@@ -33,7 +33,7 @@ export default function OrderSummary() {
       {/* Payment */}
       <div className="payment">
         <h3 className="order-payment title">Payment Method</h3>
-        <p>Visa ending in 4242</p>
+        <p>Visa ending in *4242</p>
       </div>
     </div>
   );
