@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 
 export default function CartPage() {
-  const { cart } = useCart();
+  const { cart, placeOrder } = useCart();
 
   if (cart.length === 0) {
     return (

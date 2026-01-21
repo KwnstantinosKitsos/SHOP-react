@@ -1,7 +1,9 @@
 import './PaymentSummary.css';
 import { useCart } from '../../context/CartContext';
+import { useNavigate } from 'react-router-dom';
 export default function PaymentSummary() {
-  const { cart, shippingCost } = useCart();
+  const { cart, shippingCost, placeOrder } = useCart();
+  const navigate = useNavigate();
 
   // Total
   const itemsTotalCents = cart.reduce(
@@ -16,6 +18,17 @@ export default function PaymentSummary() {
   const estimatedTax = totalBeforeTax * 0.1;
 
   const orderTotal = totalBeforeTax + estimatedTax;
+
+  async function handlePlaceOrder() {
+    try {
+      await placeOrder();
+
+      navigate('/orders');
+    } catch (error) {
+      console.error(error);
+      alert('Something gone wrong');
+    }
+  }
   return (
     <>
       <div className="payment-container">
@@ -66,7 +79,9 @@ export default function PaymentSummary() {
           </div>
         </div>
         <div className="payment-container-btn">
-          <button className="payment-btn">Place your order</button>
+          <button className="payment-btn" onClick={handlePlaceOrder}>
+            Place your order
+          </button>
         </div>
       </div>
     </>
