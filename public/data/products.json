@@ -300,6 +300,78 @@
         "tax": "141.70",
         "total": "1568.69"
       }
+    },
+    {
+      "id": "45426c26-2d66-4b49-afad-68f2a0fe8412",
+      "day": "Jan 22, 2026",
+      "orderItems": [
+        {
+          "id": "p_gpu_3070ti_asus",
+          "title": "Asus GeForce RTX 3070 Ti",
+          "description": "High-performance GPU with 8GB GDDR6X and advanced cooling.",
+          "priceCents": 64999,
+          "rating": 4.8,
+          "ratingCount": 42,
+          "thumbnail": "/assets/productsImages/1-RTX3070Ti.avif",
+          "stock": 5,
+          "keywords": [
+            "gpu",
+            "nvidia",
+            "Asus"
+          ]
+        },
+        {
+          "id": "p_gpu_3070ti_palit_gamerock",
+          "title": "Palit RTX 3070 Ti GameRock",
+          "description": "8GB GDDR6X GPU with unique Crystal ARGB design and advanced cooling.",
+          "priceCents": 62999,
+          "rating": 4.7,
+          "ratingCount": 31,
+          "thumbnail": "/assets/productsImages/2-PalitGameRock3070Ti.avif",
+          "stock": 3,
+          "keywords": [
+            "rgb",
+            "gpu",
+            "palit"
+          ]
+        },
+        {
+          "id": "p_mon_samsung_g81sf_oled",
+          "title": "Samsung Odyssey OLED G8 27\"",
+          "description": "27-inch QHD OLED display with 360Hz refresh rate and 0.03ms response time.",
+          "priceCents": 84900,
+          "rating": 4.9,
+          "ratingCount": 45,
+          "thumbnail": "/assets/productsImages/11-SamsungOLEDG8.avif",
+          "stock": 6,
+          "keywords": [
+            "monitor",
+            "Odyssey",
+            "samsung"
+          ]
+        },
+        {
+          "id": "p_mon_samsung_g81sf_oled",
+          "title": "Samsung Odyssey OLED G8 27\"",
+          "description": "27-inch QHD OLED display with 360Hz refresh rate and 0.03ms response time.",
+          "priceCents": 84900,
+          "rating": 4.9,
+          "ratingCount": 45,
+          "thumbnail": "/assets/productsImages/11-SamsungOLEDG8.avif",
+          "stock": 6,
+          "keywords": [
+            "monitor",
+            "Odyssey",
+            "samsung"
+          ]
+        }
+      ],
+      "priceDetails": {
+        "subTotal": "2977.98",
+        "shippingCost": "9.99",
+        "tax": "297.80",
+        "total": "3285.77"
+      }
     }
   ]
 }
