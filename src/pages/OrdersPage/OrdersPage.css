@@ -48,7 +48,7 @@
   border-radius: 10px;
 }
 .clear-all:hover {
-  background-color: #ff3333;
+  background-color: hsl(0, 100%, 60%);
   transform: scale(1.07);
 }
 .clear-all svg {

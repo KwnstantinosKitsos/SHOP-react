@@ -44,6 +44,7 @@ export function CartProvider({ children }) {
   }
   const deliveryDate = getDateDelivery();
 
+  // Payment
   const subTotalCents = cart.reduce(
     (acc, nextItem) => acc + nextItem.priceCents,
     0,
@@ -53,9 +54,8 @@ export function CartProvider({ children }) {
   const tax = subTotal * 0.1;
   const totalPrice = subTotal + tax + shippingCost;
 
-  // Place Order
+  // Place Order as Snapshot
   async function placeOrder() {
-    //Snapshot
     const newOrderSnapShot = {
       id: crypto.randomUUID(),
       day: new Date().toLocaleDateString('en-US', {
