@@ -7,9 +7,13 @@
       "priceCents": 64999,
       "rating": 4.8,
       "ratingCount": 42,
-      "thumbnail": "/SHOP-react/assets/productsImages/1-RTX3070Ti.avif",
+      "thumbnail": "/assets/productsImages/1-RTX3070Ti.avif",
       "stock": 5,
-      "keywords": ["gpu", "nvidia", "Asus"]
+      "keywords": [
+        "gpu",
+        "nvidia",
+        "Asus"
+      ]
     },
     {
       "id": "p_gpu_3070ti_palit_gamerock",
@@ -18,9 +22,13 @@
       "priceCents": 62999,
       "rating": 4.7,
       "ratingCount": 31,
-      "thumbnail": "/SHOP-react/assets/productsImages/2-PalitGameRock3070Ti.avif",
+      "thumbnail": "/assets/productsImages/2-PalitGameRock3070Ti.avif",
       "stock": 3,
-      "keywords": ["rgb", "gpu", "palit"]
+      "keywords": [
+        "rgb",
+        "gpu",
+        "palit"
+      ]
     },
     {
       "id": "p_ram_corsair_vengeance_ddr5_32gb",
@@ -29,9 +37,13 @@
       "priceCents": 12490,
       "rating": 4.9,
       "ratingCount": 56,
-      "thumbnail": "/SHOP-react/assets/productsImages/3-CorsairVengeanceDDR5.avif",
+      "thumbnail": "/assets/productsImages/3-CorsairVengeanceDDR5.avif",
       "stock": 15,
-      "keywords": ["memory", "ddr5", "corsair"]
+      "keywords": [
+        "memory",
+        "ddr5",
+        "corsair"
+      ]
     },
     {
       "id": "p_cpu_intel_ultra9_285k",
@@ -40,9 +52,13 @@
       "priceCents": 61900,
       "rating": 4.9,
       "ratingCount": 24,
-      "thumbnail": "/SHOP-react/assets/productsImages/4-IntelUltra9-285K.avif",
+      "thumbnail": "/assets/productsImages/4-IntelUltra9-285K.avif",
       "stock": 8,
-      "keywords": ["cpu", "intel", "ultra"]
+      "keywords": [
+        "cpu",
+        "intel",
+        "ultra"
+      ]
     },
     {
       "id": "p_cpu_amd_9950x3d",
@@ -51,9 +67,13 @@
       "priceCents": 74900,
       "rating": 5,
       "ratingCount": 12,
-      "thumbnail": "/SHOP-react/assets/productsImages/5-Ryzen9-9950X3D.avif",
+      "thumbnail": "/assets/productsImages/5-Ryzen9-9950X3D.avif",
       "stock": 4,
-      "keywords": ["cpu", "amd", "ryzen"]
+      "keywords": [
+        "cpu",
+        "amd",
+        "ryzen"
+      ]
     },
     {
       "id": "p_kb_nuphy_air60_v2",
@@ -62,9 +82,13 @@
       "priceCents": 11995,
       "rating": 4.8,
       "ratingCount": 85,
-      "thumbnail": "/SHOP-react/assets/productsImages/6-NuPhyAir60V2.avif",
+      "thumbnail": "/assets/productsImages/6-NuPhyAir60V2.avif",
       "stock": 10,
-      "keywords": ["mechanical", "keyboard", "low-profile"]
+      "keywords": [
+        "mechanical",
+        "keyboard",
+        "low-profile"
+      ]
     },
     {
       "id": "p_kb_lofree_flow_2_84",
@@ -73,9 +97,14 @@
       "priceCents": 16900,
       "rating": 4.9,
       "ratingCount": 38,
-      "thumbnail": "/SHOP-react/assets/productsImages/7-LofreeFlow2-84.avif",
+      "thumbnail": "/assets/productsImages/7-LofreeFlow2-84.avif",
       "stock": 6,
-      "keywords": ["premium", "keyboard", "lofree", "low-profile"]
+      "keywords": [
+        "premium",
+        "keyboard",
+        "lofree",
+        "low-profile"
+      ]
     },
     {
       "id": "p_mouse_logitech_superlight_2",
@@ -84,9 +113,13 @@
       "priceCents": 14900,
       "rating": 4.9,
       "ratingCount": 156,
-      "thumbnail": "/SHOP-react/assets/productsImages/8-LogitechSuperlight2.avif",
+      "thumbnail": "/assets/productsImages/8-LogitechSuperlight2.avif",
       "stock": 12,
-      "keywords": ["mouse", "superlight", "logitech"]
+      "keywords": [
+        "mouse",
+        "superlight",
+        "logitech"
+      ]
     },
     {
       "id": "p_mouse_logitech_mx_master_4",
@@ -95,9 +128,13 @@
       "priceCents": 12900,
       "rating": 4.9,
       "ratingCount": 210,
-      "thumbnail": "/SHOP-react/assets/productsImages/9-MXMaster4.avif",
+      "thumbnail": "/assets/productsImages/9-MXMaster4.avif",
       "stock": 20,
-      "keywords": ["master", "mouse", "mx"]
+      "keywords": [
+        "master",
+        "mouse",
+        "mx"
+      ]
     },
     {
       "id": "p_mon_aorus_co49dq",
@@ -106,9 +143,13 @@
       "priceCents": 109900,
       "rating": 4.9,
       "ratingCount": 28,
-      "thumbnail": "/SHOP-react/assets/productsImages/10-AorusCO49DQ.avif",
+      "thumbnail": "/assets/productsImages/10-AorusCO49DQ.avif",
       "stock": 2,
-      "keywords": ["ultrawide", "aorus", "monitor"]
+      "keywords": [
+        "ultrawide",
+        "aorus",
+        "monitor"
+      ]
     },
     {
       "id": "p_mon_samsung_g81sf_oled",
@@ -117,9 +158,13 @@
       "priceCents": 84900,
       "rating": 4.9,
       "ratingCount": 45,
-      "thumbnail": "/SHOP-react/assets/productsImages/11-SamsungOLEDG8.avif",
+      "thumbnail": "/assets/productsImages/11-SamsungOLEDG8.avif",
       "stock": 6,
-      "keywords": ["monitor", "Odyssey", "samsung"]
+      "keywords": [
+        "monitor",
+        "Odyssey",
+        "samsung"
+      ]
     },
     {
       "id": "p_audio_apple_airpods_max",
@@ -128,9 +173,13 @@
       "priceCents": 54900,
       "rating": 4.7,
       "ratingCount": 320,
-      "thumbnail": "/SHOP-react/assets/productsImages/12-AirPodsMax.avif",
+      "thumbnail": "/assets/productsImages/12-AirPodsMax.avif",
       "stock": 10,
-      "keywords": ["headphones", "apple", "audio"]
+      "keywords": [
+        "headphones",
+        "apple",
+        "audio"
+      ]
     },
     {
       "id": "p_audio_sony_wh1000xm6",
@@ -139,9 +188,13 @@
       "priceCents": 39900,
       "rating": 5,
       "ratingCount": 18,
-      "thumbnail": "/SHOP-react/assets/productsImages/13-SonyXM6.avif",
+      "thumbnail": "/assets/productsImages/13-SonyXM6.avif",
       "stock": 14,
-      "keywords": ["headphones", "sony", "audio"]
+      "keywords": [
+        "headphones",
+        "sony",
+        "audio"
+      ]
     },
     {
       "id": "p_wear_garmin_quatix_8_pro",
@@ -150,9 +203,13 @@
       "priceCents": 109900,
       "rating": 5,
       "ratingCount": 9,
-      "thumbnail": "/SHOP-react/assets/productsImages/14-GarminQuatix8Pro.avif",
+      "thumbnail": "/assets/productsImages/14-GarminQuatix8Pro.avif",
       "stock": 3,
-      "keywords": ["smartwatch", "garmin", "quatrix"]
+      "keywords": [
+        "smartwatch",
+        "garmin",
+        "quatrix"
+      ]
     },
     {
       "id": "p_wear_apple_watch_ultra_3",
@@ -161,9 +218,13 @@
       "priceCents": 89900,
       "rating": 4.9,
       "ratingCount": 62,
-      "thumbnail": "/SHOP-react/assets/productsImages/15-AppleWatchUltra3.avif",
+      "thumbnail": "/assets/productsImages/15-AppleWatchUltra3.avif",
       "stock": 12,
-      "keywords": ["ultra", "smartwatch", "apple"]
+      "keywords": [
+        "ultra",
+        "smartwatch",
+        "apple"
+      ]
     },
     {
       "id": "p_wear_samsung_watch_ultra",
@@ -172,10 +233,42 @@
       "priceCents": 69900,
       "rating": 4.8,
       "ratingCount": 41,
-      "thumbnail": "/SHOP-react/assets/productsImages/16-GalaxyWatchUltra.avif",
+      "thumbnail": "/assets/productsImages/16-GalaxyWatchUltra.avif",
       "stock": 9,
-      "keywords": ["ultra", "smartwatch", "samsung"]
+      "keywords": [
+        "ultra",
+        "smartwatch",
+        "samsung"
+      ]
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "id": "bacf9a6b-680c-4d37-acdd-4bc8e97a73f6",
+      "day": "Feb 3, 2026",
+      "orderItems": [
+        {
+          "id": "p_cpu_intel_ultra9_285k",
+          "title": "Intel Core Ultra 9 285K",
+          "description": "Next-gen 24-core processor with AI Boost and up to 5.7GHz clock speed.",
+          "priceCents": 61900,
+          "rating": 4.9,
+          "ratingCount": 24,
+          "thumbnail": "/assets/productsImages/4-IntelUltra9-285K.avif",
+          "stock": 8,
+          "keywords": [
+            "cpu",
+            "intel",
+            "ultra"
+          ]
+        }
+      ],
+      "priceDetails": {
+        "subTotal": "619.00",
+        "shippingCost": "9.99",
+        "tax": "61.90",
+        "total": "690.89"
+      }
+    }
+  ]
 }
