@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
       <div className="product-container">
         <div className="product-container-img">
           <img
-            src={product.thumbnail}
+            src={`${import.meta.env.BASE_URL}${product.thumbnail}`}
             className="product-img"
             alt={product.title}
           />

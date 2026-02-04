@@ -18,7 +18,9 @@ export default function ShopPage() {
     async function fetchProduct() {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:5001/products');
+        const response = await fetch(
+          `${import.meta.env.BASE_URL}data/products.json`,
+        );
 
         if (!response.ok) {
           throw new Error('API Error:', Error);
@@ -26,7 +28,7 @@ export default function ShopPage() {
         const data = await response.json();
 
         // Upadte State
-        setProducts(data);
+        setProducts(data.products);
       } catch (error) {
         setError('Αδυναμία φόρτωσης προϊόντων. Παρακαλώ δοκιμάστε αργότερα.');
         console.error(error);
