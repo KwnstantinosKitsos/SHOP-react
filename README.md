@@ -68,7 +68,7 @@ npm install
 This project uses json-server to fetch products and store order history. **You need to start the server in its own terminal window:**
 
 ```bash
-npx json-server --watch db.json --port 5000
+npx json-server --watch public/data/products.json --port 5001
 ```
 
 ### 3. Run the app
